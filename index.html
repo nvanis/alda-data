@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALDA 4.0 - Asistente Virtual IES Aljada</title>
+    <style>
+        /* Estilos básicos para una apariencia profesional y táctil */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
 
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 80%;
+        }
+
+        h1 { color: #007cba; margin-bottom: 0.5rem; }
+        p { color: #555; line-height: 1.6; }
+
+        .logo-centro {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+
+        /* Botón de ayuda para el Tótem */
+        .btn-start {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 15px 30px;
+            background-color: #007cba;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .btn-start:active { transform: scale(0.95); }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://iesaljada.murciaeduca.es/wp-content/uploads/2021/09/logo-ies-aljada.png" alt="Logo IES Aljada" class="logo-centro">
+        
+        <h1>Bienvenido a ALDA 4.0</h1>
+        <p>Tu asistente inteligente para gestiones administrativas en el IES Aljada.<br>
+        Pulsa en la burbuja azul de la derecha para comenzar.</p>
+        
+        <div class="btn-start">¿Cómo puedo ayudarte hoy?</div>
+    </div>
+
+    <footer>
+        Proyecto de Innovación ALDA 4.0 - Desarrollo por Alumnado de ASIR
+    </footer>
+
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: 'TU_PROJECT_ID_AQUI' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production'
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "module"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+
+</body>
+</html>
