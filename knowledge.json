@@ -1,11 +1,20 @@
 {
   "centro": "IES Aljada",
-  "ultima_actualizacion": "2026-03-24",
-  "preguntas_frecuentes": [
+  "version": "1.0",
+  "base_datos": [
     {
-      "id": "TEST_01",
-      "pregunta": "Prueba de conexión",
-      "respuesta": "Conexión con GitHub establecida correctamente."
+      "id": "SEC001",
+      "categoria": "becas",
+      "pregunta": "¿Cuándo sale la beca general?",
+      "respuesta": "Suele publicarse en marzo. Revisa la web de Educarm.",
+      "enlaces": ["https://www.educarm.es", "https://becas.mefp.gob.es"]
+    },
+    {
+      "id": "SEC002",
+      "categoria": "horarios",
+      "pregunta": "¿Qué horario tiene secretaría?",
+      "respuesta": "Atención al público de 09:00 a 13:00 horas.",
+      "enlaces": []
     }
   ]
 }
